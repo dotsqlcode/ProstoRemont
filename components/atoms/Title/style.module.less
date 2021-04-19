@@ -1,0 +1,23 @@
+@import url('./../../../public/less/variables.less');
+
+.title {
+    color: @darkColor;
+    font-weight: @fwN;
+    line-height: 1.4;
+
+    @media screen and (max-width: @psm) {
+        line-height: 1.5;
+        font-weight: @fwB;
+        font-size: 18px;
+    }
+
+    &--bold {
+        font-weight: @fwB;
+        font-size: 26px;
+
+        @media screen and (max-width: @psm) {
+            line-height: 1.5;
+            font-size: 18px;
+        }
+    }
+}

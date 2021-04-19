@@ -1,0 +1,48 @@
+@import url('./../../../public/less/variables.less');
+
+.description {
+    display: block;
+
+    &--with-button {
+        .description__content {
+            margin-bottom: 90px;
+
+            @media screen and (max-width: @psm) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    &__title {
+        margin-bottom: 20px;
+        white-space: pre-line;
+        font-size: 18px;
+    }
+
+    &__content {
+        line-height: 1.6;
+        color: @descColor;
+        white-space: pre-line;
+        font-size: 16px;
+
+        @media screen and (max-width: @md) {
+            margin-right: 20px;
+        }
+
+        p {
+            @media screen and (max-width: @psm) {
+                display: inline;
+            }
+        }
+    }
+
+    &__double-btn {
+        display: flex;
+        
+        a {
+            &:last-child {
+                margin-left: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+@import url('./../../../public/less/variables.less');
+
+.main-layout {
+    display: flex;
+
+    @media screen and (max-width: @xl) {
+        padding:0 20px;
+    }
+
+
+    &__left {
+        width: 35%;
+        display: flex;
+        justify-content: flex-end;
+
+        @media screen and (max-width: @md) {
+            display: none;
+        }
+    }
+
+    &__right {
+        width: 65%;
+        padding-left: 100px;
+
+        @media screen and (max-width: @md) {
+            padding-left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &__menu {
+        width: 350px;
+    }
+}

@@ -1,0 +1,42 @@
+@import url('./../../../public/less/variables.less');
+
+.checkbox {
+
+    &__label {
+        display: flex;
+        align-items: center;
+    }
+
+    &__custom {
+        width: 20px;
+        height: 20px;
+        border: 2px solid darken(@controlColor, 50%);
+        margin-right: 10px;
+        transition: @defaultTransition;
+        position: relative;
+        flex-shrink: 0;
+        border-radius: 4px;
+
+        &:after {
+            opacity: 0;
+            content: '✔';
+            color: #fff;
+            position: absolute;
+            left: 45%;
+            top: 43%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &__hide {
+        display: none;
+    }
+
+    &__hide:checked + &__custom{
+        background-color: darken(@controlColor, 50%);
+        
+        &:after {
+            opacity: 1;
+        }
+    }
+}

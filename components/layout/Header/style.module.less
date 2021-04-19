@@ -1,0 +1,30 @@
+@import url('./../../../public/less/variables.less');
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 35%;
+    padding-top: 100px;
+    
+    @media screen and (max-width: @xl) {
+        padding-left: 20px;
+    }
+
+    &--crumbs {
+        padding-top: 50px;
+        width: 100%;
+        justify-content: unset;
+    }
+
+    &__content-wrap {
+        display: flex;
+        justify-content: flex-end;
+        width: 35%;
+    }
+    
+    &__content {
+        width: 350px;
+    }
+
+}

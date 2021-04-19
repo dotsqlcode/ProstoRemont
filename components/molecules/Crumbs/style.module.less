@@ -1,0 +1,23 @@
+@import url('./../../../public/less/variables.less');
+
+.crumbs {
+    display: flex;
+    align-items: center;
+
+    &__link {
+        display: block;
+        color: @darkColor;
+        text-decoration: none;
+        font-size: 15px;
+
+        &:hover {
+            color: @descColor;
+        }
+    }
+
+    &__separator {
+        display: block;
+        color: @descColor;
+        margin: 0 10px;
+    }
+}

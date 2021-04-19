@@ -1,0 +1,26 @@
+{
+  "name": "with-next-less",
+  "scripts": {
+    "dev": "next",
+    "build": "next build && next export",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@zeit/next-less": "^1.0.1",
+    "file-loader": "^6.2.0",
+    "less": "^3.0.4",
+    "next": "latest",
+    "next-fonts": "^1.5.1",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-slick": "^0.28.1",
+    "swiper": "^6.5.4"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "css-loader": "^5.0.1",
+    "mini-css-extract-plugin": "^0.4.3",
+    "style-loader": "^2.0.0"
+  }
+}

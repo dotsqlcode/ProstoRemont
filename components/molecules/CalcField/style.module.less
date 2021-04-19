@@ -1,0 +1,43 @@
+@import url('./../../../public/less/variables.less');
+
+.calc-field {
+    &__control {
+        height: 45px;
+        width: 47px;
+        border: 1px solid @controlColor;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        color: @controlText;
+        user-select: none;
+        flex-shrink: 0;
+
+        &:hover {
+            background-color: @controlActive;
+        }
+    }
+
+    &__input {
+        border: none;
+        border-top: 1px solid @controlColor;
+        border-bottom: 1px solid @controlColor;
+        padding: 0 10px;
+        width: 100%;
+        text-align: center;
+        display: block;
+        &:focus, &:active  {
+            border: none;
+            border-top: 1px solid @controlColor;
+            border-bottom: 1px solid @controlColor;
+        }
+    }
+
+    &__label {
+        margin-bottom: 10px;
+    }
+
+    &__wrap {
+        display: flex;
+    }
+}

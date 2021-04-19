@@ -1,0 +1,77 @@
+@import url('./../../../public/less/variables.less');
+
+.button {
+    display: block;
+    color: @textColor;
+    width: 100%;
+    max-width: 440px;
+    height: 120px;
+    font-size: 16px;
+    font-weight: @fwN;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    background: @UIColor;
+    transition: @defaultTransition;
+    justify-content: center;
+    border-radius: 3px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.2);
+
+    @media screen and (max-width: @psm) {
+        height: 80px;
+        background-color: @activeColor;
+        font-weight: @fwB;
+        border-radius: 10px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    &:hover {
+        background: @activeColor;
+    }
+
+    &--gray {
+        padding: 15px 25px;
+        height: auto;
+        display: table;
+        border: 1px solid @UIColor2;
+        background: transparent;
+        color: @UIColor2;
+        border-radius: 0;
+        width: auto;
+        box-shadow: none;
+
+        &:hover {
+            background-color: @UIColor2;
+            color: @ligthColor;
+            transform: translateX(10px);
+        }
+    }
+
+    &--place {
+        width: 166px;
+        height: 55px;
+    }
+
+    &--medium {
+        height: 82px;
+    }
+
+    &__arrow {
+        height: 114px;
+        margin-left: 20px;
+        transition: @defaultTransition;
+
+        @media screen and (max-width: @psm) {
+            display: none;
+        }
+    }
+
+    &__icon {
+        height: 50px;
+    }
+
+    &:hover &__arrow {
+        transform: translateX(20px);
+    }
+
+}

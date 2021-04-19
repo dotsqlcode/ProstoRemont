@@ -1,0 +1,50 @@
+@import url('./../../../public/less/variables.less');
+
+.double-layout {
+    display: flex;
+
+    @media screen and (max-width: @xl) {
+        padding-left: 20px;
+    }
+
+    @media screen and (max-width: @md) {
+        flex-wrap: wrap;
+    }
+
+    &__left {
+        width: 49%;
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 170px;
+
+        @media screen and (max-width: @lg) {
+            padding-top: 0;
+        }
+
+        @media screen and (max-width: @md) {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__left-content {
+        width: 550px;
+        
+        @media screen and (max-width: @lg) {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__right {
+        width: 51%;
+
+        @media screen and (max-width: @md) {
+            width: 100%;
+        }
+
+        img {
+            max-width: 100%;
+        }
+    }
+}

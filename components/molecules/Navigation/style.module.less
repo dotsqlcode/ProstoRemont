@@ -1,0 +1,19 @@
+@import url('../../../public/less/variables.less');
+
+.navigation {
+
+    &__link {
+        display: block;
+        color: @darkColor;
+        text-decoration: none;
+        transition: @defaultTransition;
+
+        &:hover {
+            transform: translateX(6px);
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 14px;
+        }
+    }
+}

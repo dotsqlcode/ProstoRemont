@@ -1,0 +1,140 @@
+@import url('./../../variables.less');
+
+.design-project {
+    background-color: @bgColor;
+    position: relative;
+
+    &__desc {
+        line-height: 1.6;
+        color: @darkColor;
+
+        &--light {
+            font-size: 16px;
+            color: @descColor;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__list {
+        padding-left: 20px;
+        list-style: none;
+    }
+
+    &__list-item {
+        color: @darkColor;
+        position: relative;
+        
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            left: -18px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: @darkColor;
+        }
+    }
+
+    [class*="content"] {
+        &:not(:last-child) {
+            margin-bottom: 40px;
+        }
+    }
+
+    [class*="header__content-wrap"] {
+        margin-bottom: 0 !important;
+    }
+
+    [class*="main-layout__right"] {
+        padding-left: 0;
+    }
+
+    header {
+        margin-bottom: 90px;
+    }
+
+    &__pen {
+        position: absolute;
+        right: 0;
+
+        &--light {
+            top: 100px;
+            right: 40px;
+        }
+
+        &--big {
+            top: 450px;
+        }
+    }
+
+    &__section-line {
+        position: absolute;
+        bottom: 5px;
+        right: 0;
+        width: calc(54% + 500px);
+        height: 1px;
+        background: #c4cbd0;
+        z-index: 90;
+    }
+}
+
+.oplan-section {
+    position: relative;
+    padding-top: 200px;
+    padding-bottom: 4px;
+}
+
+.iplan-section {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 4px;
+}
+
+.mplan-section {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 4px;
+}
+
+.yplan-section {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 4px;
+}
+
+.nplan-section {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 4px;
+}
+
+.rplan-section {
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 4px;
+}
+
+.calcchanger-section {
+    background-color: @ligthColor;
+    display: flex;
+
+    &__calc {
+        width: 30%;
+        padding-left: 100px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__changer {
+        width: 70%;
+    }
+}

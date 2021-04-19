@@ -1,0 +1,44 @@
+.calculator {
+    max-width: 410px;
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__checkbox {
+        max-width: 204px;
+
+        &:not(:last-child) {
+            margin-bottom: 18px;
+        }
+    }
+
+    &__row {
+        display: flex;
+        margin-bottom: 25px;
+
+        &--no-flex {
+            display: block;
+        }
+    }
+
+    &__col {
+        display: flex;
+        align-items: flex-end;
+        &:last-child {
+            margin-left: 84px;
+        }
+
+        &--big {
+            width: 215px;
+        }
+
+        &--medium {
+            width: 154px;
+        }
+
+        &--light {
+            width: 110px;
+        }
+    }
+}
